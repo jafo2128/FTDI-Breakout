@@ -1,7 +1,7 @@
 # FTDI-Breakout
 The FTDI-Breakout is an USB to Serial Adapter with FTDI FT232R.
 
-http://www.watterott.com/en/FTDI-Breakout-Reloaded-V11
+Shop: [FTDI-Breakout](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V11)
 
 ![FTDI-Breakout](https://raw.github.com/watterott/FTDI-Breakout/master/img/ftdi-breakout.jpg)
 
