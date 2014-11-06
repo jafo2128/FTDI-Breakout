@@ -77,6 +77,7 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -649,17 +650,25 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <smd name="1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="20" cream="no"/>
 <text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
 </package>
-<package name="PAD-1-1.6">
+<package name="PAD-1.00-1.60">
 <description>Through-Hole Pad</description>
 <pad name="1" x="0" y="0" drill="1" diameter="1.6"/>
 <text x="-1.905" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
 <circle x="0" y="0" radius="0.8" width="0.127" layer="21"/>
 </package>
-<package name="PAD-1-2">
+<package name="PAD-1.00-2.00">
 <description>Through-Hole Pad</description>
 <circle x="0" y="0" radius="1" width="0.127" layer="51"/>
 <pad name="1" x="0" y="0" drill="1" diameter="2"/>
 <text x="-1.905" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-0.80X1.60">
+<smd name="1" x="0" y="0" dx="0.8" dy="1.6" layer="1" roundness="20"/>
+<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-0.80X1.60_NC">
+<smd name="1" x="0" y="0" dx="0.8" dy="1.6" layer="1" roundness="20" cream="no"/>
+<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -797,6 +806,7 @@ all kinds in 0603</description>
 </devices>
 </deviceset>
 <deviceset name="FUSE" prefix="F" uservalue="yes">
+<description>Fuses</description>
 <gates>
 <gate name="F" symbol="FUSE" x="0" y="0"/>
 </gates>
@@ -831,6 +841,7 @@ all kinds in 0603</description>
 </devices>
 </deviceset>
 <deviceset name="PAD" prefix="X">
+<description>Pads</description>
 <gates>
 <gate name="X" symbol="PAD" x="0" y="0"/>
 </gates>
@@ -851,7 +862,7 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-1-1.6" package="PAD-1-1.6">
+<device name="-1.00-1.60" package="PAD-1.00-1.60">
 <connects>
 <connect gate="X" pin="P" pad="1"/>
 </connects>
@@ -859,7 +870,7 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-1-2" package="PAD-1-2">
+<device name="-1.00-2.00" package="PAD-1.00-2.00">
 <connects>
 <connect gate="X" pin="P" pad="1"/>
 </connects>
@@ -876,6 +887,22 @@ all kinds in 0603</description>
 </technologies>
 </device>
 <device name="-1.27X1.27_NC" package="PAD-1.27X1.27_NC">
+<connects>
+<connect gate="X" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0.80X1.60" package="PAD-0.80X1.60">
+<connects>
+<connect gate="X" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0.80X1.60_NC" package="PAD-0.80X1.60_NC">
 <connects>
 <connect gate="X" pin="P" pad="1"/>
 </connects>
@@ -946,10 +973,10 @@ all kinds in 0603</description>
 </packages>
 <symbols>
 <symbol name="78XX">
-<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.286" y="-4.064" size="1.524" layer="95">GND</text>
@@ -960,7 +987,11 @@ all kinds in 0603</description>
 </symbols>
 <devicesets>
 <deviceset name="LDO" prefix="IC">
-<description>LDOs</description>
+<description>LDOs
+&lt;br&gt;
+&lt;b&gt;TS1117&lt;/b&gt; 800mA, Vin max 12V&lt;br&gt;
+&lt;b&gt;TS5204&lt;/b&gt; 150mA, Vin max 16V&lt;br&gt;
+&lt;b&gt;TS9011&lt;/b&gt; 250mA, Vin max 12V compatible &lt;b&gt;AP2210&lt;/b&gt; 300mA, Vin max 15V&lt;br&gt;</description>
 <gates>
 <gate name="A" symbol="78XX" x="0" y="0"/>
 </gates>
@@ -972,14 +1003,16 @@ all kinds in 0603</description>
 <connect gate="A" pin="VO" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="NRND" value="NRND" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-TS1117-3V3" package="SOT223">
 <connects>
 <connect gate="A" pin="GND" pad="1"/>
 <connect gate="A" pin="VI" pad="3"/>
-<connect gate="A" pin="VO" pad="2"/>
+<connect gate="A" pin="VO" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -999,7 +1032,7 @@ all kinds in 0603</description>
 <connects>
 <connect gate="A" pin="GND" pad="1"/>
 <connect gate="A" pin="VI" pad="3"/>
-<connect gate="A" pin="VO" pad="2"/>
+<connect gate="A" pin="VO" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1010,6 +1043,28 @@ all kinds in 0603</description>
 <connect gate="A" pin="GND" pad="3"/>
 <connect gate="A" pin="VI" pad="2"/>
 <connect gate="A" pin="VO" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="NRND" value="NRND" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-TS9011-5V" package="SOT23">
+<connects>
+<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="VI" pad="3"/>
+<connect gate="A" pin="VO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TS9011-3V3" package="SOT23">
+<connects>
+<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="VI" pad="3"/>
+<connect gate="A" pin="VO" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8691,6 +8746,7 @@ all kinds in 0603</description>
 </devices>
 </deviceset>
 <deviceset name="OSHW_LOGO" prefix="LOGO">
+<description>Open-Source-Hardware Logo</description>
 <gates>
 <gate name="G$1" symbol="OSHW_LOGO" x="0" y="0"/>
 </gates>
@@ -8718,6 +8774,7 @@ all kinds in 0603</description>
 </devices>
 </deviceset>
 <deviceset name="PASSER" prefix="X">
+<description>Fiducial Markers</description>
 <gates>
 <gate name="X" symbol="PASSER" x="0" y="0"/>
 </gates>
@@ -8730,6 +8787,7 @@ all kinds in 0603</description>
 </devices>
 </deviceset>
 <deviceset name="WEEE_LOGO" prefix="LOGO">
+<description>WEEE Logo</description>
 <gates>
 <gate name="G$1" symbol="WEEE_LOGO" x="0" y="0"/>
 </gates>
@@ -8747,6 +8805,7 @@ all kinds in 0603</description>
 </devices>
 </deviceset>
 <deviceset name="LOGO" prefix="LOGO">
+<description>Watterott electronic Logo</description>
 <gates>
 <gate name="G$1" symbol="LOGO" x="0" y="0"/>
 </gates>
@@ -9153,9 +9212,9 @@ all kinds in 0603</description>
 <circle x="-1" y="1" radius="0.2" width="0.127" layer="21"/>
 <text x="0" y="0.635" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-0.635" size="0.8128" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="1"/>
-<rectangle x1="-1.1" y1="-1.1" x2="1.1" y2="1.1" layer="29"/>
-<smd name="PAD" x="0" y="0" dx="0.8" dy="0.8" layer="1" roundness="20"/>
+<rectangle x1="-1.25" y1="-1.25" x2="1.25" y2="1.25" layer="1"/>
+<rectangle x1="-1.3" y1="-1.3" x2="1.3" y2="1.3" layer="29"/>
+<smd name="TP" x="0" y="0" dx="1" dy="1" layer="1" roundness="20"/>
 </package>
 </packages>
 <symbols>
@@ -9189,7 +9248,7 @@ all kinds in 0603</description>
 </symbols>
 <devicesets>
 <deviceset name="FT231X" prefix="IC">
-<description>FTDI FT231X  USB to UART  Bridge (5V tolerant inputs)</description>
+<description>FTDI FT231X  USB to UART Bridge (5V tolerant inputs)</description>
 <gates>
 <gate name="IC" symbol="FT231X" x="0" y="0"/>
 </gates>
@@ -9234,7 +9293,7 @@ all kinds in 0603</description>
 <connect gate="IC" pin="CBUS1" pad="14"/>
 <connect gate="IC" pin="CBUS2" pad="7"/>
 <connect gate="IC" pin="CBUS3" pad="16"/>
-<connect gate="IC" pin="GND" pad="3 13 PAD"/>
+<connect gate="IC" pin="GND" pad="3 13 TP"/>
 <connect gate="IC" pin="RXD" pad="1"/>
 <connect gate="IC" pin="TXD" pad="17"/>
 <connect gate="IC" pin="USBDM" pad="9"/>
@@ -9368,8 +9427,8 @@ all kinds in 0603</description>
 <smd name="4" x="-2.25" y="-2.55" dx="0.7" dy="1.5" layer="1" roundness="10"/>
 <smd name="5" x="0.75" y="-2.55" dx="0.7" dy="1.5" layer="1" roundness="10"/>
 <smd name="6" x="2.25" y="-2.55" dx="0.7" dy="1.5" layer="1" roundness="10"/>
-<hole x="-1.5" y="0" drill="0.9"/>
-<hole x="1.5" y="0" drill="0.9"/>
+<hole x="-1.5" y="0" drill="1"/>
+<hole x="1.5" y="0" drill="1"/>
 <rectangle x1="-4.15" y1="1.4" x2="-3.15" y2="2.2" layer="1"/>
 <rectangle x1="-4.15" y1="-2.2" x2="-3.15" y2="-1.4" layer="1"/>
 <rectangle x1="3.15" y1="1.4" x2="4.15" y2="2.2" layer="1"/>
@@ -9433,6 +9492,7 @@ all kinds in 0603</description>
 </symbols>
 <devicesets>
 <deviceset name="SW-2UM" prefix="SW">
+<description>Switch</description>
 <gates>
 <gate name="SW" symbol="SWITCH-2UM" x="0" y="0"/>
 </gates>
