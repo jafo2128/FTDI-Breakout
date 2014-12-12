@@ -13,7 +13,7 @@ Shop:
 * 3.3V or 5V logic/supply voltage selectable by switch
 * Rx + Tx Status LEDs
 * Overcurrent protection (resettable polyswitch fuse)
-* Standard 6 pin FTDI connector (for Arduino)
+* Standard 6 pin FTDI connector with GND, CTS, VCC, TX, RX, DTR (for Arduino)
 * USB-Connector: microUSB (v2) or miniUSB (v1)
 
 
