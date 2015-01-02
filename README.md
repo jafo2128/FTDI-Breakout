@@ -5,7 +5,7 @@ Shop:
 [FTDI FT231X Breakout](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2),
 [FTDI FT231X Breakout Light](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2-Light)
 
-![FTDI-Breakout](https://raw.github.com/watterott/FTDI-Breakout/master/img/ftdi-breakout.jpg)
+[![FTDI-Breakout](https://raw.github.com/watterott/FTDI-Breakout/master/img/ftdi-breakout.jpg)](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2)
 
 
 ## Features
