@@ -1,11 +1,12 @@
 # FTDI-Breakout
 The FTDI-Breakout is an USB to Serial Adapter with FTDI Chipset.
 
-Shop:
-[FTDI FT231X Breakout](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2),
-[FTDI FT231X Breakout Light](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2-Light)
-
 [![FTDI-Breakout](https://raw.github.com/watterott/FTDI-Breakout/master/pcb/FTDI-Breakout_v20.jpg)](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2)
+
+
+## Shop
+* [FTDI FT231X Breakout](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2) (with soldered pin headers)
+* [FTDI FT231X Breakout Light](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2-Light)
 
 
 ## Features
@@ -17,9 +18,6 @@ Shop:
 * USB-Connector: microUSB (v2) or miniUSB (v1)
 
 
-## Hardware
+## Hardware and Software
 * [Schematics + Layout](https://github.com/watterott/FTDI-Breakout/tree/master/pcb)
-
-
-## Software
-* [FTDI Driver](http://www.ftdichip.com/Drivers/VCP.htm)
+* [FTDI Serial Port Driver](http://www.ftdichip.com/Drivers/VCP.htm)
