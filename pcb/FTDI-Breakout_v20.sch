@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -97,11 +97,11 @@
 <package name="USB-MICRO-10103594">
 <description>USB Series Micro Surface Mounted 
 (FCI 609-4050-6-ND)</description>
-<smd name="VBUS" x="-2.885" y="-1.3" dx="0.4" dy="1.85" layer="1" roundness="10" rot="R90"/>
-<smd name="D-" x="-2.885" y="-0.65" dx="0.4" dy="1.85" layer="1" roundness="10" rot="R90"/>
-<smd name="D+" x="-2.885" y="0" dx="0.4" dy="1.85" layer="1" roundness="10" rot="R90"/>
-<smd name="ID" x="-2.885" y="0.65" dx="0.4" dy="1.85" layer="1" roundness="10" rot="R90"/>
-<smd name="GND" x="-2.885" y="1.3" dx="0.4" dy="1.85" layer="1" roundness="10" rot="R90"/>
+<smd name="VBUS" x="-2.885" y="-1.3" dx="0.4" dy="1.8" layer="1" roundness="10" rot="R90"/>
+<smd name="D-" x="-2.885" y="-0.65" dx="0.4" dy="1.8" layer="1" roundness="10" rot="R90"/>
+<smd name="D+" x="-2.885" y="0" dx="0.4" dy="1.8" layer="1" roundness="10" rot="R90"/>
+<smd name="ID" x="-2.885" y="0.65" dx="0.4" dy="1.8" layer="1" roundness="10" rot="R90"/>
+<smd name="GND" x="-2.885" y="1.3" dx="0.4" dy="1.8" layer="1" roundness="10" rot="R90"/>
 <smd name="SHLD2" x="0.25" y="0.9625" dx="1.425" dy="2.5" layer="1" roundness="10" rot="R90"/>
 <smd name="SHLD1" x="0.25" y="-0.9625" dx="1.425" dy="2.5" layer="1" rot="R90"/>
 <polygon width="0.0254" layer="1">
@@ -245,14 +245,14 @@
 <vertex x="-1" y="-3.475"/>
 </polygon>
 <rectangle x1="-1.75" y1="-1.8" x2="-1.2" y2="1.8" layer="41"/>
-<circle x="0.01" y="2.725" radius="0.6" width="0.001" layer="44"/>
-<circle x="-3" y="2.425" radius="0.4" width="0.001" layer="44"/>
-<circle x="-3" y="-2.425" radius="0.4" width="0.001" layer="44"/>
-<circle x="0.01" y="-2.725" radius="0.6" width="0.001" layer="44"/>
 <circle x="0.01" y="2.725" radius="0.6" width="0.001" layer="46"/>
 <circle x="-3" y="2.425" radius="0.4" width="0.001" layer="46"/>
 <circle x="-3" y="-2.425" radius="0.4" width="0.001" layer="46"/>
 <circle x="0.01" y="-2.725" radius="0.6" width="0.001" layer="46"/>
+<hole x="-3" y="2.425" drill="0.8"/>
+<hole x="0.01" y="2.725" drill="1.2"/>
+<hole x="-3" y="-2.425" drill="0.8"/>
+<hole x="0.01" y="-2.725" drill="1.2"/>
 </package>
 <package name="USB-B-SMT">
 <description>USB Series B Surface Mounted</description>
@@ -308,12 +308,12 @@
 <wire x1="2.54" y1="-5.08" x2="8.89" y2="-4.445" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-4.445" x2="8.89" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-1.27" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
-<pad name="VBUS" x="-2.7178" y="-3.4925" drill="0.9144" rot="R90"/>
-<pad name="D-" x="-2.7178" y="-1.0033" drill="0.9144" rot="R90"/>
-<pad name="D+" x="-2.7178" y="1.0033" drill="0.9144" rot="R90"/>
-<pad name="GND" x="-2.7178" y="3.4925" drill="0.9144" rot="R90"/>
-<pad name="SHLD1" x="0" y="6.5659" drill="2.3114" rot="R90"/>
-<pad name="SHLD2" x="0" y="-6.5659" drill="2.3114" rot="R90"/>
+<pad name="VBUS" x="-2.7178" y="-3.4925" drill="0.9" diameter="1.45" rot="R90"/>
+<pad name="D-" x="-2.7178" y="-1.0033" drill="0.9" diameter="1.45" rot="R90"/>
+<pad name="D+" x="-2.7178" y="1.0033" drill="0.9" diameter="1.45" rot="R90"/>
+<pad name="GND" x="-2.7178" y="3.4925" drill="0.9" diameter="1.45" rot="R90"/>
+<pad name="SHLD1" x="0" y="6.5659" drill="2.3" rot="R90"/>
+<pad name="SHLD2" x="0" y="-6.5659" drill="2.3" rot="R90"/>
 <text x="0" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
 </package>
 <package name="USB-B-H">
@@ -328,13 +328,35 @@
 <wire x1="5.08" y1="5.08" x2="11.43" y2="4.445" width="0.127" layer="21"/>
 <wire x1="11.43" y1="4.445" x2="11.43" y2="1.27" width="0.127" layer="21"/>
 <wire x1="11.43" y1="1.27" x2="5.08" y2="0.635" width="0.127" layer="21"/>
-<pad name="VBUS" x="-1.9812" y="1.25" drill="0.9144" rot="R270"/>
-<pad name="D-" x="-1.9812" y="-1.25" drill="0.9144" rot="R270"/>
-<pad name="D+" x="0" y="-1.25" drill="0.9144" rot="R90"/>
-<pad name="GND" x="0" y="1.25" drill="0.9144" rot="R90"/>
-<pad name="SHLD1" x="2.7178" y="6.0198" drill="2.286" rot="R180"/>
-<pad name="SHLD2" x="2.7178" y="-6.0198" drill="2.286" rot="R180"/>
+<pad name="VBUS" x="-1.9812" y="1.25" drill="0.9" diameter="1.45" rot="R270"/>
+<pad name="D-" x="-1.9812" y="-1.25" drill="0.9" diameter="1.45" rot="R270"/>
+<pad name="D+" x="0" y="-1.25" drill="0.9" diameter="1.45" rot="R90"/>
+<pad name="GND" x="0" y="1.25" drill="0.9" diameter="1.45" rot="R90"/>
+<pad name="SHLD1" x="2.7178" y="6.0198" drill="2.3" rot="R180"/>
+<pad name="SHLD2" x="2.7178" y="-6.0198" drill="2.3" rot="R180"/>
 <text x="2.54" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
+</package>
+<package name="USB-A-S">
+<description>USB Series A Surface Mounted</description>
+<wire x1="-3.6957" y1="-6.5659" x2="10.287" y2="-6.5659" width="0.127" layer="21"/>
+<wire x1="-3.6957" y1="6.5659" x2="10.287" y2="6.5659" width="0.127" layer="21"/>
+<wire x1="10.287" y1="-6.477" x2="10.287" y2="6.477" width="0.127" layer="21"/>
+<wire x1="-3.7084" y1="-6.5024" x2="-3.7084" y2="6.5024" width="0.127" layer="21"/>
+<wire x1="2.54" y1="5.08" x2="8.89" y2="4.445" width="0.127" layer="21"/>
+<wire x1="8.89" y1="4.445" x2="8.89" y2="1.27" width="0.127" layer="21"/>
+<wire x1="8.89" y1="1.27" x2="2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-5.08" x2="8.89" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-4.445" x2="8.89" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-1.27" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
+<pad name="SHLD1" x="0" y="6.5659" drill="2.3" rot="R90"/>
+<pad name="SHLD2" x="0" y="-6.5659" drill="2.3" rot="R90"/>
+<smd name="D-" x="-3.45" y="-1" dx="4" dy="1" layer="1" roundness="10" rot="R180"/>
+<smd name="VBUS" x="-3.45" y="-3.25" dx="4" dy="1.5" layer="1" roundness="10" rot="R180"/>
+<smd name="D+" x="-3.45" y="1" dx="4" dy="1" layer="1" roundness="10" rot="R180"/>
+<smd name="GND" x="-3.45" y="3.25" dx="4" dy="1.5" layer="1" roundness="10" rot="R180"/>
+<text x="0" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<wire x1="-1.143" y1="6.604" x2="1.143" y2="6.604" width="1.016" layer="31" curve="-180"/>
+<wire x1="1.143" y1="-6.604" x2="-1.143" y2="-6.604" width="1.016" layer="31" curve="-180"/>
 </package>
 <package name="USB-MB-H">
 <description>USB Series Mini-B Hole Mounted</description>
@@ -351,11 +373,11 @@
 <wire x1="3.25" y1="-1.25" x2="-1.75" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="-1.75" y1="-0.75" x2="-1.75" y2="0.75" width="0.127" layer="21"/>
 <wire x1="-1.75" y1="0.75" x2="3.25" y2="1.25" width="0.127" layer="21"/>
-<pad name="VBUS" x="-5.1" y="-1.6" drill="0.8" rot="R180"/>
-<pad name="D+" x="-5.1" y="0" drill="0.8" rot="R180"/>
-<pad name="GND" x="-5.1" y="1.6" drill="0.8" rot="R180"/>
-<pad name="D-" x="-3.9" y="-0.8" drill="0.8" rot="R180"/>
-<pad name="ID" x="-3.9" y="0.8" drill="0.8" rot="R180"/>
+<pad name="VBUS" x="-5.1" y="-1.6" drill="0.8" diameter="1.25" rot="R180"/>
+<pad name="D+" x="-5.1" y="0" drill="0.8" diameter="1.25" rot="R180"/>
+<pad name="GND" x="-5.1" y="1.6" drill="0.8" diameter="1.25" rot="R180"/>
+<pad name="D-" x="-3.9" y="-0.8" drill="0.8" diameter="1.25" rot="R180"/>
+<pad name="ID" x="-3.9" y="0.8" drill="0.8" diameter="1.25" rot="R180"/>
 <pad name="SHLD2" x="0" y="3.65" drill="1.9" rot="R180"/>
 <pad name="SHLD1" x="0" y="-3.65" drill="1.9" rot="R180"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
@@ -366,37 +388,15 @@
 <wire x1="-7.7" y1="-2.6" x2="-7.7" y2="2.6" width="0.127" layer="21"/>
 <wire x1="11.6" y1="-2.6" x2="-7.7" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="11.6" y1="2.6" x2="-7.7" y2="2.6" width="0.127" layer="21"/>
-<pad name="GND" x="-0.73" y="0" drill="0.9" rot="R180"/>
-<pad name="D+" x="-2.73" y="0" drill="0.9" rot="R180"/>
-<pad name="D-" x="-4.73" y="0" drill="0.9" rot="R180"/>
-<pad name="VBUS" x="-6.73" y="0" drill="0.9" rot="R180"/>
+<pad name="GND" x="-0.73" y="0" drill="0.9" diameter="1.45" rot="R180"/>
+<pad name="D+" x="-2.73" y="0" drill="0.9" diameter="1.45" rot="R180"/>
+<pad name="D-" x="-4.73" y="0" drill="0.9" diameter="1.45" rot="R180"/>
+<pad name="VBUS" x="-6.73" y="0" drill="0.9" diameter="1.45" rot="R180"/>
 <pad name="SHLD3" x="0" y="-2.72" drill="1.5" rot="R180"/>
 <pad name="SHLD4" x="0" y="2.72" drill="1.5" rot="R180"/>
 <pad name="SHLD2" x="-7" y="-2.72" drill="1.5" rot="R180"/>
 <pad name="SHLD1" x="-7" y="2.72" drill="1.5" rot="R180"/>
 <text x="3.81" y="0" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-</package>
-<package name="USB-A-S">
-<description>USB Series A Surface Mounted</description>
-<wire x1="-3.6957" y1="-6.5659" x2="10.287" y2="-6.5659" width="0.127" layer="21"/>
-<wire x1="-3.6957" y1="6.5659" x2="10.287" y2="6.5659" width="0.127" layer="21"/>
-<wire x1="10.287" y1="-6.477" x2="10.287" y2="6.477" width="0.127" layer="21"/>
-<wire x1="-3.7084" y1="-6.5024" x2="-3.7084" y2="6.5024" width="0.127" layer="21"/>
-<wire x1="2.54" y1="5.08" x2="8.89" y2="4.445" width="0.127" layer="21"/>
-<wire x1="8.89" y1="4.445" x2="8.89" y2="1.27" width="0.127" layer="21"/>
-<wire x1="8.89" y1="1.27" x2="2.54" y2="0.635" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-5.08" x2="8.89" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-4.445" x2="8.89" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-1.27" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
-<pad name="SHLD1" x="0" y="6.5659" drill="2.3" rot="R90"/>
-<pad name="SHLD2" x="0" y="-6.5659" drill="2.3114" rot="R90"/>
-<smd name="D-" x="-3.45" y="-1" dx="4" dy="1" layer="1" roundness="10" rot="R180"/>
-<smd name="VBUS" x="-3.45" y="-3.25" dx="4" dy="1.5" layer="1" roundness="10" rot="R180"/>
-<smd name="D+" x="-3.45" y="1" dx="4" dy="1" layer="1" roundness="10" rot="R180"/>
-<smd name="GND" x="-3.45" y="3.25" dx="4" dy="1.5" layer="1" roundness="10" rot="R180"/>
-<text x="0" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
-<circle x="0" y="6.5659" radius="1.4" width="0.5" layer="31"/>
-<circle x="0" y="-6.5659" radius="1.4" width="0.5" layer="31"/>
 </package>
 <package name="USB-AU-Y1006-R">
 <description>USB Series A Surface Mounted
@@ -410,8 +410,8 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <smd name="D-" x="-3.71" y="-1" dx="2.9" dy="0.9" layer="1" roundness="10" rot="R180"/>
 <smd name="GND" x="-3.71" y="3.5" dx="2.9" dy="1" layer="1" roundness="10" rot="R180"/>
 <wire x1="-3.85" y1="7" x2="-3.85" y2="-7" width="0.127" layer="21"/>
-<wire x1="-3.6957" y1="-7" x2="10.3" y2="-7" width="0.127" layer="21"/>
-<wire x1="-3.6957" y1="7" x2="10.3" y2="7" width="0.127" layer="21"/>
+<wire x1="-3.85" y1="-7" x2="10.3" y2="-7" width="0.127" layer="21"/>
+<wire x1="-3.85" y1="7" x2="10.3" y2="7" width="0.127" layer="21"/>
 <wire x1="10.3" y1="-7" x2="10.3" y2="7" width="0.127" layer="21"/>
 <wire x1="2.54" y1="5.08" x2="8.89" y2="4.445" width="0.127" layer="21"/>
 <wire x1="8.89" y1="4.445" x2="8.89" y2="1.27" width="0.127" layer="21"/>
@@ -420,8 +420,8 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <wire x1="8.89" y1="-4.445" x2="8.89" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-1.27" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
 <text x="0" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
-<circle x="0" y="6.57" radius="1.4" width="0.5" layer="31"/>
-<circle x="0" y="-6.57" radius="1.4" width="0.5" layer="31"/>
+<wire x1="1.143" y1="-6.604" x2="-1.143" y2="-6.604" width="1.016" layer="31" curve="-180"/>
+<wire x1="-1.143" y1="6.604" x2="1.143" y2="6.604" width="1.016" layer="31" curve="-180"/>
 </package>
 </packages>
 <symbols>
@@ -566,7 +566,7 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <library name="we-rcl">
 <description>R, C, L, Diodes, Crystals</description>
 <packages>
-<package name="R0603">
+<package name="C0603">
 <wire x1="0.45" y1="0.85" x2="0.45" y2="0.5" width="0.127" layer="21"/>
 <wire x1="0.45" y1="0.5" x2="0.45" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="0.45" y1="-0.5" x2="0.45" y2="-0.85" width="0.127" layer="21"/>
@@ -579,12 +579,12 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <wire x1="0.45" y1="-0.5" x2="-0.45" y2="-0.5" width="0.127" layer="21"/>
 <text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
 <text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
-<smd name="1" x="0" y="0.85" dx="1.1" dy="1" layer="1" roundness="20" rot="R270"/>
-<smd name="2" x="0" y="-0.85" dx="1.1" dy="1" layer="1" roundness="20" rot="R270"/>
+<smd name="1" x="0" y="0.75" dx="1" dy="1" layer="1" roundness="20" rot="R270"/>
+<smd name="2" x="0" y="-0.75" dx="1" dy="1" layer="1" roundness="20" rot="R270"/>
 </package>
-<package name="R0805">
-<smd name="1" x="0" y="0.95" dx="1.3" dy="1.55" layer="1" roundness="20" rot="R270"/>
-<smd name="2" x="0" y="-0.95" dx="1.3" dy="1.55" layer="1" roundness="20" rot="R270"/>
+<package name="C0805">
+<smd name="1" x="0" y="0.9" dx="1.3" dy="1.55" layer="1" roundness="20" rot="R270"/>
+<smd name="2" x="0" y="-0.9" dx="1.3" dy="1.55" layer="1" roundness="20" rot="R270"/>
 <wire x1="0.675" y1="1.05" x2="0.675" y2="0.6" width="0.127" layer="21"/>
 <wire x1="0.675" y1="0.6" x2="0.675" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="0.675" y1="-0.6" x2="0.675" y2="-1.05" width="0.127" layer="21"/>
@@ -598,42 +598,10 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <text x="-1.5875" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
 <text x="1.5875" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
 </package>
-<package name="R0402">
-<smd name="1" x="0" y="0.65" dx="0.7" dy="0.9" layer="1" roundness="20" rot="R270"/>
-<smd name="2" x="0" y="-0.65" dx="0.7" dy="0.9" layer="1" roundness="20" rot="R270"/>
-<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
-<text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
-<wire x1="-0.275" y1="0.525" x2="0.275" y2="0.525" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="-0.525" x2="0.275" y2="-0.525" width="0.127" layer="21"/>
-<wire x1="0.275" y1="0.525" x2="0.275" y2="0.325" width="0.127" layer="21"/>
-<wire x1="0.275" y1="0.325" x2="0.275" y2="-0.325" width="0.127" layer="21"/>
-<wire x1="0.275" y1="-0.325" x2="0.275" y2="-0.525" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="0.525" x2="-0.275" y2="0.325" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="0.325" x2="-0.275" y2="-0.325" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="-0.325" x2="-0.275" y2="-0.525" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="0.325" x2="0.275" y2="0.325" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="-0.325" x2="0.275" y2="-0.325" width="0.127" layer="21"/>
-</package>
 <package name="PAD-1.27X2.54_NC">
 <description>Pad without cream</description>
 <smd name="1" x="0" y="0" dx="1.27" dy="2.54" layer="1" roundness="20" cream="no"/>
 <text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
-</package>
-<package name="R1206">
-<smd name="1" x="0" y="1.4" dx="1.6" dy="1.8" layer="1" roundness="20" rot="R270"/>
-<smd name="2" x="0" y="-1.4" dx="1.6" dy="1.8" layer="1" roundness="20" rot="R270"/>
-<wire x1="-0.85" y1="1.6" x2="-0.85" y2="1" width="0.127" layer="21"/>
-<wire x1="-0.85" y1="1" x2="-0.85" y2="-1" width="0.127" layer="21"/>
-<wire x1="-0.85" y1="-1" x2="-0.85" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="0.85" y1="1.6" x2="0.85" y2="1" width="0.127" layer="21"/>
-<wire x1="0.85" y1="1" x2="0.85" y2="-1" width="0.127" layer="21"/>
-<wire x1="0.85" y1="-1" x2="0.85" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="0.85" y1="1.6" x2="-0.85" y2="1.6" width="0.127" layer="21"/>
-<wire x1="0.85" y1="-1.6" x2="-0.85" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="0.85" y1="1" x2="-0.85" y2="1" width="0.127" layer="21"/>
-<wire x1="0.85" y1="-1" x2="-0.85" y2="-1" width="0.127" layer="21"/>
-<text x="-1.5875" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
-<text x="1.5875" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
 </package>
 <package name="PAD-1.27X2.54">
 <description>Pad with cream</description>
@@ -662,12 +630,93 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <pad name="1" x="0" y="0" drill="1" diameter="2"/>
 <text x="-1.905" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
 </package>
+<package name="C0402">
+<smd name="1" x="0" y="0.55" dx="0.6" dy="0.9" layer="1" roundness="20" rot="R270"/>
+<smd name="2" x="0" y="-0.55" dx="0.6" dy="0.9" layer="1" roundness="20" rot="R270"/>
+<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
+<wire x1="-0.275" y1="0.525" x2="0.275" y2="0.525" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="-0.525" x2="0.275" y2="-0.525" width="0.127" layer="21"/>
+<wire x1="0.275" y1="0.525" x2="0.275" y2="0.325" width="0.127" layer="21"/>
+<wire x1="0.275" y1="0.325" x2="0.275" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="0.275" y1="-0.325" x2="0.275" y2="-0.525" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="0.525" x2="-0.275" y2="0.325" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="0.325" x2="-0.275" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="-0.325" x2="-0.275" y2="-0.525" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="0.325" x2="0.275" y2="0.325" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="-0.325" x2="0.275" y2="-0.325" width="0.127" layer="21"/>
+</package>
+<package name="C1206">
+<smd name="1" x="0" y="1.35" dx="1.6" dy="1.8" layer="1" roundness="20" rot="R270"/>
+<smd name="2" x="0" y="-1.35" dx="1.6" dy="1.8" layer="1" roundness="20" rot="R270"/>
+<wire x1="-0.85" y1="1.6" x2="-0.85" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="1" x2="-0.85" y2="-1" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-1" x2="-0.85" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.85" y1="1.6" x2="0.85" y2="1" width="0.127" layer="21"/>
+<wire x1="0.85" y1="1" x2="0.85" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-1" x2="0.85" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.85" y1="1.6" x2="-0.85" y2="1.6" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-1.6" x2="-0.85" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.85" y1="1" x2="-0.85" y2="1" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-1" x2="-0.85" y2="-1" width="0.127" layer="21"/>
+<text x="-1.5875" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<text x="1.5875" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
+</package>
+<package name="C0201">
+<smd name="1" x="0" y="0.255" dx="0.28" dy="0.43" layer="1" roundness="20" rot="R270"/>
+<smd name="2" x="0" y="-0.255" dx="0.28" dy="0.43" layer="1" roundness="20" rot="R270"/>
+<rectangle x1="-0.3" y1="-0.15" x2="0.3" y2="0.15" layer="21" rot="R270"/>
+<text x="-0.9525" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<text x="0.9525" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
+</package>
+<package name="C1210">
+<wire x1="1.2446" y1="0.9652" x2="1.2446" y2="-0.9652" width="0.127" layer="21"/>
+<wire x1="-1.2446" y1="0.9652" x2="-1.2446" y2="-0.9652" width="0.127" layer="21"/>
+<smd name="1" x="0" y="1.35" dx="1.6" dy="2.7" layer="1" roundness="20" rot="R270"/>
+<smd name="2" x="0" y="-1.35" dx="1.6" dy="2.7" layer="1" roundness="20" rot="R270"/>
+<rectangle x1="-0.3705" y1="0.0268" x2="0.3796" y2="2.6267" layer="21" rot="R270"/>
+<rectangle x1="-0.3796" y1="-2.6267" x2="0.3705" y2="-0.0268" layer="21" rot="R270"/>
+<text x="-2.2225" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<text x="2.2225" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
+</package>
 <package name="PAD-0.80X1.60">
+<description>Pad with cream</description>
 <smd name="1" x="0" y="0" dx="0.8" dy="1.6" layer="1" roundness="20"/>
 <text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="PAD-0.80X1.60_NC">
+<description>Pad without cream</description>
 <smd name="1" x="0" y="0" dx="0.8" dy="1.6" layer="1" roundness="20" cream="no"/>
+<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-2.54X5.08">
+<description>Pad with cream</description>
+<smd name="1" x="0" y="0" dx="2.54" dy="5.08" layer="1" roundness="20"/>
+<text x="-2.54" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-2.54X5.08_NC">
+<description>Pad without cream</description>
+<smd name="1" x="0" y="0" dx="2.54" dy="5.08" layer="1" roundness="20" cream="no"/>
+<text x="-2.54" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-0.5">
+<description>Pad with cream</description>
+<smd name="1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100"/>
+<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-0.5_NC">
+<description>Pad without cream</description>
+<smd name="1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-1.0">
+<description>Pad with cream</description>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-1.0_NC">
+<description>Pad without cream</description>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
 <text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -715,14 +764,14 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <devicesets>
 <deviceset name="CAPACITOR" prefix="C" uservalue="yes">
 <description>Capacitors&lt;br&gt;
-...2.2uF -&gt; 0603&lt;br&gt;
-...4.7uF -&gt; 0805&lt;br&gt;
-...10uF -&gt; 1206&lt;br&gt;</description>
+...4.7uF @ 6.3V -&gt; 0402&lt;br&gt;
+...10uF @ 16V -&gt; 0603&lt;br&gt;
+...22uF @ 25V -&gt; 0805&lt;br&gt;</description>
 <gates>
 <gate name="C" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-C0402" package="R0402">
+<device name="-0402" package="C0402">
 <connects>
 <connect gate="C" pin="1" pad="1"/>
 <connect gate="C" pin="2" pad="2"/>
@@ -731,7 +780,7 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-C0603" package="R0603">
+<device name="-0603" package="C0603">
 <connects>
 <connect gate="C" pin="1" pad="1"/>
 <connect gate="C" pin="2" pad="2"/>
@@ -740,7 +789,7 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-C0805" package="R0805">
+<device name="-0805" package="C0805">
 <connects>
 <connect gate="C" pin="1" pad="1"/>
 <connect gate="C" pin="2" pad="2"/>
@@ -749,7 +798,25 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-C1206" package="R1206">
+<device name="-1206" package="C1206">
+<connects>
+<connect gate="C" pin="1" pad="1"/>
+<connect gate="C" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0201" package="C0201">
+<connects>
+<connect gate="C" pin="1" pad="1"/>
+<connect gate="C" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1210" package="C1210">
 <connects>
 <connect gate="C" pin="1" pad="1"/>
 <connect gate="C" pin="2" pad="2"/>
@@ -762,12 +829,12 @@ USB 2.0 - AU-Y1006-2-R&lt;br&gt;</description>
 </deviceset>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <description>Resistors&lt;br&gt;
-all kinds in 0603</description>
+all kinds in 0603 and 0402</description>
 <gates>
 <gate name="R" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-R0603" package="R0603">
+<device name="-0603" package="C0603">
 <connects>
 <connect gate="R" pin="1" pad="1"/>
 <connect gate="R" pin="2" pad="2"/>
@@ -776,7 +843,7 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-R0805" package="R0805">
+<device name="-0805" package="C0805">
 <connects>
 <connect gate="R" pin="1" pad="1"/>
 <connect gate="R" pin="2" pad="2"/>
@@ -785,7 +852,7 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-R0402" package="R0402">
+<device name="-0402" package="C0402">
 <connects>
 <connect gate="R" pin="1" pad="1"/>
 <connect gate="R" pin="2" pad="2"/>
@@ -794,7 +861,25 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-R1206" package="R1206">
+<device name="-1206" package="C1206">
+<connects>
+<connect gate="R" pin="1" pad="1"/>
+<connect gate="R" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0201" package="C0201">
+<connects>
+<connect gate="R" pin="1" pad="1"/>
+<connect gate="R" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1210" package="C1210">
 <connects>
 <connect gate="R" pin="1" pad="1"/>
 <connect gate="R" pin="2" pad="2"/>
@@ -811,7 +896,7 @@ all kinds in 0603</description>
 <gate name="F" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0603" package="R0603">
+<device name="-0603" package="C0603">
 <connects>
 <connect gate="F" pin="1" pad="1"/>
 <connect gate="F" pin="2" pad="2"/>
@@ -820,7 +905,7 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-0805" package="R0805">
+<device name="-0805" package="C0805">
 <connects>
 <connect gate="F" pin="1" pad="1"/>
 <connect gate="F" pin="2" pad="2"/>
@@ -829,7 +914,16 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-1206" package="R1206">
+<device name="-1206" package="C1206">
+<connects>
+<connect gate="F" pin="1" pad="1"/>
+<connect gate="F" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1210" package="C1210">
 <connects>
 <connect gate="F" pin="1" pad="1"/>
 <connect gate="F" pin="2" pad="2"/>
@@ -910,6 +1004,54 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-2.54X5.08" package="PAD-2.54X5.08">
+<connects>
+<connect gate="X" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2.54X5.08_NC" package="PAD-2.54X5.08_NC">
+<connects>
+<connect gate="X" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0.5" package="PAD-0.5">
+<connects>
+<connect gate="X" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0.5_NC" package="PAD-0.5_NC">
+<connects>
+<connect gate="X" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1.0" package="PAD-1.0">
+<connects>
+<connect gate="X" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1.0_NC" package="PAD-1.0_NC">
+<connects>
+<connect gate="X" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -970,6 +1112,35 @@ all kinds in 0603</description>
 <wire x1="2.794" y1="3.2762" x2="2.794" y2="-3.277" width="0.127" layer="21"/>
 <wire x1="2.794" y1="3.2762" x2="-3.048" y2="3.2762" width="0.127" layer="21"/>
 </package>
+<package name="DPACK">
+<description>DPACK / TO-252</description>
+<wire x1="3.85" y1="-3.25" x2="-2.2" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-3.25" x2="-2.2" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="3.25" x2="3.85" y2="3.2766" width="0.127" layer="21"/>
+<wire x1="3.85" y1="3.25" x2="3.85" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="3.937" y1="2.5654" x2="4.6482" y2="2.5654" width="0.2032" layer="21"/>
+<wire x1="4.6482" y1="2.5654" x2="5.1054" y2="2.1082" width="0.2032" layer="21"/>
+<wire x1="5.1054" y1="2.1082" x2="5.1054" y2="-2.1082" width="0.2032" layer="21"/>
+<wire x1="5.1054" y1="-2.1082" x2="4.6482" y2="-2.5654" width="0.2032" layer="21"/>
+<wire x1="4.6482" y1="-2.5654" x2="3.937" y2="-2.5654" width="0.2032" layer="21"/>
+<wire x1="3.937" y1="-2.5654" x2="3.937" y2="2.5654" width="0.2032" layer="21"/>
+<smd name="4" x="2.38" y="0" dx="5.8" dy="6.2" layer="1" roundness="10" rot="R270"/>
+<smd name="1" x="-4.8" y="2.28" dx="1.6" dy="3" layer="1" roundness="10" rot="R270"/>
+<smd name="3" x="-4.8" y="-2.28" dx="1.6" dy="3" layer="1" roundness="10" rot="R270"/>
+<text x="0" y="4.445" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-4.445" size="0.8128" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<rectangle x1="-4.1402" y1="0.8382" x2="-3.2766" y2="3.7338" layer="21" rot="R270"/>
+<rectangle x1="-4.1402" y1="-3.7338" x2="-3.2766" y2="-0.8382" layer="21" rot="R270"/>
+<rectangle x1="-3.0734" y1="-0.381" x2="-2.2098" y2="0.381" layer="21" rot="R270"/>
+<polygon width="0.127" layer="21">
+<vertex x="3.937" y="2.5654"/>
+<vertex x="4.6482" y="2.5654"/>
+<vertex x="5.1054" y="2.1082"/>
+<vertex x="5.1054" y="-2.1082"/>
+<vertex x="4.6482" y="-2.5654"/>
+<vertex x="3.937" y="-2.5654"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="78XX">
@@ -989,9 +1160,9 @@ all kinds in 0603</description>
 <deviceset name="LDO" prefix="IC">
 <description>LDOs
 &lt;br&gt;
-&lt;b&gt;TS1117&lt;/b&gt; 800mA, Vin max 12V&lt;br&gt;
-&lt;b&gt;TS5204&lt;/b&gt; 150mA, Vin max 16V&lt;br&gt;
-&lt;b&gt;TS9011&lt;/b&gt; 250mA, Vin max 12V compatible &lt;b&gt;AP2210&lt;/b&gt; 300mA, Vin max 15V&lt;br&gt;</description>
+&lt;b&gt;TS1117&lt;/b&gt; 800mA, Vin max 12V - compatible &lt;b&gt;NCP1117&lt;/b&gt; 1A, Vin max 20V&lt;br&gt;
+&lt;b&gt;TS9011&lt;/b&gt; 250mA, Vin max 12V - compatible &lt;b&gt;AP2210&lt;/b&gt; 300mA, Vin max 15V&lt;br&gt;
+&lt;b&gt;TS5204&lt;/b&gt; 150mA, Vin max 16V&lt;br&gt;</description>
 <gates>
 <gate name="A" symbol="78XX" x="0" y="0"/>
 </gates>
@@ -1008,7 +1179,7 @@ all kinds in 0603</description>
 </technology>
 </technologies>
 </device>
-<device name="-TS1117-3V3" package="SOT223">
+<device name="-TS1117CW-3V3" package="SOT223">
 <connects>
 <connect gate="A" pin="GND" pad="1"/>
 <connect gate="A" pin="VI" pad="3"/>
@@ -1028,7 +1199,7 @@ all kinds in 0603</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-TS1117-5V" package="SOT223">
+<device name="-TS1117CW-5V" package="SOT223">
 <connects>
 <connect gate="A" pin="GND" pad="1"/>
 <connect gate="A" pin="VI" pad="3"/>
@@ -1065,6 +1236,16 @@ all kinds in 0603</description>
 <connect gate="A" pin="GND" pad="1"/>
 <connect gate="A" pin="VI" pad="3"/>
 <connect gate="A" pin="VO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TS1117CP-5V" package="DPACK">
+<connects>
+<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="VI" pad="3"/>
+<connect gate="A" pin="VO" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8732,10 +8913,10 @@ all kinds in 0603</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FRAME-A4L" prefix="FRAME" uservalue="yes">
+<deviceset name="FRAME-A4L" prefix="FRAME">
 <description>Frame: DIN A4 Landscape</description>
 <gates>
-<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
+<gate name="F" symbol="A4L-LOC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -8748,7 +8929,7 @@ all kinds in 0603</description>
 <deviceset name="OSHW_LOGO" prefix="LOGO">
 <description>Open-Source-Hardware Logo</description>
 <gates>
-<gate name="G$1" symbol="OSHW_LOGO" x="0" y="0"/>
+<gate name="L" symbol="OSHW_LOGO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="X0100" package="OSHW_6X100">
@@ -8789,7 +8970,7 @@ all kinds in 0603</description>
 <deviceset name="WEEE_LOGO" prefix="LOGO">
 <description>WEEE Logo</description>
 <gates>
-<gate name="G$1" symbol="WEEE_LOGO" x="0" y="0"/>
+<gate name="L" symbol="WEEE_LOGO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-M" package="WEEE_TPLAC_M">
@@ -8807,7 +8988,7 @@ all kinds in 0603</description>
 <deviceset name="LOGO" prefix="LOGO">
 <description>Watterott electronic Logo</description>
 <gates>
-<gate name="G$1" symbol="LOGO" x="0" y="0"/>
+<gate name="L" symbol="LOGO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-PLACE" package="LOGO_TPLACE">
@@ -8852,15 +9033,15 @@ all kinds in 0603</description>
 <library name="we-opto">
 <description>Displays, LEDs...</description>
 <packages>
-<package name="LED_0603">
-<description>&lt;b&gt;CHIPLED&lt;/b&gt;</description>
+<package name="C0603">
+<description>Chip LED</description>
 <wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="21" curve="170.055574"/>
 <wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="21" curve="-180"/>
 <wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="21"/>
 <wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="21"/>
 <circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="21"/>
-<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1" roundness="20"/>
-<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1" roundness="20"/>
+<smd name="C" x="0" y="0.75" dx="0.9" dy="0.8" layer="1" roundness="20"/>
+<smd name="A" x="0" y="-0.75" dx="0.9" dy="0.8" layer="1" roundness="20"/>
 <text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
 <text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
 <rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="21"/>
@@ -8875,8 +9056,8 @@ all kinds in 0603</description>
 <rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="21"/>
 <rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
 </package>
-<package name="LED_0805">
-<description>&lt;b&gt;CHIPLED&lt;/b&gt;</description>
+<package name="C0805">
+<description>Chip LED</description>
 <wire x1="-0.35" y1="0.925" x2="0.35" y2="0.925" width="0.1016" layer="21" curve="162.394521"/>
 <wire x1="-0.35" y1="-0.925" x2="0.35" y2="-0.925" width="0.1016" layer="21" curve="-162.394521"/>
 <wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="21"/>
@@ -8899,8 +9080,8 @@ all kinds in 0603</description>
 <rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.8" layer="21"/>
 <rectangle x1="-0.625" y1="0.925" x2="-0.3" y2="1" layer="21"/>
 </package>
-<package name="LED_1206">
-<description>&lt;b&gt;CHIPLED&lt;/b&gt;</description>
+<package name="C1206">
+<description>Chip LED</description>
 <wire x1="-0.4" y1="1.6" x2="0.4" y2="1.6" width="0.1016" layer="21" curve="172.619069"/>
 <wire x1="-0.8" y1="-0.95" x2="-0.8" y2="0.95" width="0.1016" layer="21"/>
 <wire x1="0.8" y1="0.95" x2="0.8" y2="-0.95" width="0.1016" layer="21"/>
@@ -8922,8 +9103,6 @@ all kinds in 0603</description>
 <rectangle x1="-0.175" y1="0" x2="0.175" y2="0.35" layer="21"/>
 </package>
 <package name="LED_3MM">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-3 mm, round</description>
 <wire x1="1.27" y1="1.5748" x2="-1.27" y2="1.5748" width="0.127" layer="21"/>
 <wire x1="0" y1="-1.524" x2="-0.9756" y2="-1.1708" width="0.0508" layer="21" curve="-39.80361"/>
 <wire x1="0" y1="-1.524" x2="1.0125" y2="-1.1391" width="0.0508" layer="21" curve="41.633208"/>
@@ -8943,14 +9122,12 @@ all kinds in 0603</description>
 <wire x1="1.0082" y1="-1.7643" x2="2.032" y2="0" width="0.127" layer="21" curve="60.255215"/>
 <wire x1="0" y1="-2.032" x2="-0.9634" y2="-1.7891" width="0.127" layer="21" curve="-28.301701"/>
 <wire x1="0" y1="-2.032" x2="1.065" y2="-1.7306" width="0.127" layer="21" curve="31.60822"/>
-<pad name="A" x="0" y="-1.27" drill="0.8128" shape="octagon" rot="R90"/>
-<pad name="C" x="0" y="1.27" drill="0.8128" shape="square" rot="R90"/>
+<pad name="A" x="0" y="-1.27" drill="0.8" diameter="1.3" shape="octagon" rot="R90"/>
+<pad name="C" x="0" y="1.27" drill="0.8" diameter="1.3" shape="square" rot="R90"/>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-2.54" size="0.8128" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="LED_5MM">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-5 mm, round</description>
 <wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
 <wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.127" layer="21" curve="-286.260205"/>
 <wire x1="0" y1="-1.143" x2="-1.143" y2="0" width="0.0508" layer="21" curve="-90"/>
@@ -8960,14 +9137,12 @@ all kinds in 0603</description>
 <wire x1="0" y1="-2.159" x2="-2.159" y2="0" width="0.0508" layer="21" curve="-90"/>
 <wire x1="2.159" y1="0" x2="0" y2="2.159" width="0.0508" layer="21" curve="90"/>
 <circle x="0" y="0" radius="2.54" width="0.0508" layer="21"/>
-<pad name="A" x="0" y="-1.27" drill="0.8128" shape="octagon" rot="R90"/>
-<pad name="C" x="0" y="1.27" drill="0.8128" shape="square" rot="R90"/>
+<pad name="A" x="0" y="-1.27" drill="0.8" diameter="1.3" shape="octagon" rot="R90"/>
+<pad name="C" x="0" y="1.27" drill="0.8" diameter="1.3" shape="square" rot="R90"/>
 <text x="0" y="3.175" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-3.81" size="0.8128" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="LED_10MM">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-10 mm, round</description>
 <wire x1="2.54" y1="5.08" x2="-2.54" y2="5.08" width="0.127" layer="21" curve="-306.869898"/>
 <wire x1="0" y1="4.445" x2="4.445" y2="0" width="0.0508" layer="21" curve="-90"/>
 <wire x1="0" y1="3.81" x2="3.81" y2="0" width="0.0508" layer="21" curve="-90"/>
@@ -8979,8 +9154,8 @@ all kinds in 0603</description>
 <wire x1="0" y1="-2.54" x2="-2.54" y2="0" width="0.0508" layer="21" curve="-90"/>
 <wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="5.08" width="0.0508" layer="21"/>
-<pad name="C" x="0" y="1.27" drill="0.8128" diameter="1.6764" shape="square" rot="R90"/>
-<pad name="A" x="0" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
+<pad name="C" x="0" y="1.27" drill="0.8" diameter="1.5" shape="square" rot="R90"/>
+<pad name="A" x="0" y="-1.27" drill="0.8" diameter="1.5" shape="octagon" rot="R90"/>
 <text x="0" y="5.715" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-6.35" size="0.8128" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 </package>
@@ -9013,34 +9188,34 @@ all kinds in 0603</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED" prefix="D">
+<deviceset name="LED" prefix="D" uservalue="yes">
 <description>LEDs</description>
 <gates>
-<gate name="L" symbol="LED" x="0" y="0"/>
+<gate name="D" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0603" package="LED_0603">
+<device name="-0603" package="C0603">
 <connects>
-<connect gate="L" pin="A" pad="A"/>
-<connect gate="L" pin="C" pad="C"/>
+<connect gate="D" pin="A" pad="A"/>
+<connect gate="D" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-0805" package="LED_0805">
+<device name="-0805" package="C0805">
 <connects>
-<connect gate="L" pin="A" pad="A"/>
-<connect gate="L" pin="C" pad="C"/>
+<connect gate="D" pin="A" pad="A"/>
+<connect gate="D" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-1206" package="LED_1206">
+<device name="-1206" package="C1206">
 <connects>
-<connect gate="L" pin="A" pad="A"/>
-<connect gate="L" pin="C" pad="C"/>
+<connect gate="D" pin="A" pad="A"/>
+<connect gate="D" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9048,8 +9223,8 @@ all kinds in 0603</description>
 </device>
 <device name="-3MM" package="LED_3MM">
 <connects>
-<connect gate="L" pin="A" pad="A"/>
-<connect gate="L" pin="C" pad="C"/>
+<connect gate="D" pin="A" pad="A"/>
+<connect gate="D" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9057,8 +9232,8 @@ all kinds in 0603</description>
 </device>
 <device name="-5MM" package="LED_5MM">
 <connects>
-<connect gate="L" pin="A" pad="A"/>
-<connect gate="L" pin="C" pad="C"/>
+<connect gate="D" pin="A" pad="A"/>
+<connect gate="D" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9066,8 +9241,8 @@ all kinds in 0603</description>
 </device>
 <device name="-10MM" package="LED_10MM">
 <connects>
-<connect gate="L" pin="A" pad="A"/>
-<connect gate="L" pin="C" pad="C"/>
+<connect gate="D" pin="A" pad="A"/>
+<connect gate="D" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9212,9 +9387,9 @@ all kinds in 0603</description>
 <circle x="-1" y="1" radius="0.2" width="0.127" layer="21"/>
 <text x="0" y="0.635" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-0.635" size="0.8128" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<rectangle x1="-1.25" y1="-1.25" x2="1.25" y2="1.25" layer="1"/>
-<rectangle x1="-1.3" y1="-1.3" x2="1.3" y2="1.3" layer="29"/>
-<smd name="TP" x="0" y="0" dx="1" dy="1" layer="1" roundness="20"/>
+<rectangle x1="-1.3" y1="-1.3" x2="1.3" y2="1.3" layer="1"/>
+<rectangle x1="-1.35" y1="-1.35" x2="1.35" y2="1.35" layer="29"/>
+<smd name="TP" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="20"/>
 </package>
 </packages>
 <symbols>
@@ -9240,8 +9415,8 @@ all kinds in 0603</description>
 <pin name="CBUS0" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <pin name="VCCIO" x="-17.78" y="-5.08" length="middle" direction="pwr"/>
 <pin name="VCC" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
-<pin name="CBUS1" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="CBUS2" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="RXLED/CBUS1" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="TXLED/CBUS2" x="17.78" y="-12.7" length="middle" rot="R180"/>
 <pin name="CBUS3" x="17.78" y="-15.24" length="middle" rot="R180"/>
 <text x="-12.7" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -9264,12 +9439,12 @@ all kinds in 0603</description>
 <connect gate="IC" pin="!RTS" pad="2"/>
 <connect gate="IC" pin="3V3OUT" pad="13"/>
 <connect gate="IC" pin="CBUS0" pad="18"/>
-<connect gate="IC" pin="CBUS1" pad="17"/>
-<connect gate="IC" pin="CBUS2" pad="10"/>
 <connect gate="IC" pin="CBUS3" pad="19"/>
 <connect gate="IC" pin="GND" pad="6 16"/>
 <connect gate="IC" pin="RXD" pad="4"/>
+<connect gate="IC" pin="RXLED/CBUS1" pad="17"/>
 <connect gate="IC" pin="TXD" pad="20"/>
+<connect gate="IC" pin="TXLED/CBUS2" pad="10"/>
 <connect gate="IC" pin="USBDM" pad="12"/>
 <connect gate="IC" pin="USBDP" pad="11"/>
 <connect gate="IC" pin="VCC" pad="15"/>
@@ -9290,12 +9465,12 @@ all kinds in 0603</description>
 <connect gate="IC" pin="!RTS" pad="19"/>
 <connect gate="IC" pin="3V3OUT" pad="10"/>
 <connect gate="IC" pin="CBUS0" pad="15"/>
-<connect gate="IC" pin="CBUS1" pad="14"/>
-<connect gate="IC" pin="CBUS2" pad="7"/>
 <connect gate="IC" pin="CBUS3" pad="16"/>
 <connect gate="IC" pin="GND" pad="3 13 TP"/>
 <connect gate="IC" pin="RXD" pad="1"/>
+<connect gate="IC" pin="RXLED/CBUS1" pad="14"/>
 <connect gate="IC" pin="TXD" pad="17"/>
+<connect gate="IC" pin="TXLED/CBUS2" pad="7"/>
 <connect gate="IC" pin="USBDM" pad="9"/>
 <connect gate="IC" pin="USBDP" pad="8"/>
 <connect gate="IC" pin="VCC" pad="12"/>
@@ -9316,33 +9491,33 @@ all kinds in 0603</description>
 <packages>
 <package name="FTDI">
 <description>FTDI-Breakout Pinout</description>
-<pad name="1-GND" x="-6.35" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2-CTS" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3-VCC" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4-TX" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="5-RX" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="6-DTR" x="6.35" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1-GND" x="-6.35" y="0" drill="0.9" diameter="1.3" shape="long" rot="R90"/>
+<pad name="2-CTS" x="-3.81" y="0" drill="0.9" diameter="1.3" shape="long" rot="R90"/>
+<pad name="3-VCC" x="-1.27" y="0" drill="0.9" diameter="1.3" shape="long" rot="R90"/>
+<pad name="4-TX" x="1.27" y="0" drill="0.9" diameter="1.3" shape="long" rot="R90"/>
+<pad name="5-RX" x="3.81" y="0" drill="0.9" diameter="1.3" shape="long" rot="R90"/>
+<pad name="6-DTR" x="6.35" y="0" drill="0.9" diameter="1.3" shape="long" rot="R90"/>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="10" rot="R180" align="center">&gt;NAME</text>
 </package>
 <package name="FTDI_SMD">
 <description>FTDI-Breakout Pinout SMD with cream</description>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="10" rot="R180" align="center">&gt;NAME</text>
-<smd name="1-GND" x="-6.35" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="2-CTS" x="-3.81" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="3-VCC" x="-1.27" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="4-TX" x="1.27" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="5-RX" x="3.81" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="6-DTR" x="6.35" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
+<smd name="1-GND" x="-6.35" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90"/>
+<smd name="2-CTS" x="-3.81" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90"/>
+<smd name="3-VCC" x="-1.27" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90"/>
+<smd name="4-TX" x="1.27" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90"/>
+<smd name="5-RX" x="3.81" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90"/>
+<smd name="6-DTR" x="6.35" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90"/>
 </package>
 <package name="FDTI_SMDNC">
 <description>FTDI-Breakout Pinout SMD without cream</description>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="10" rot="R180" align="center">&gt;NAME</text>
-<smd name="1-GND" x="-6.35" y="0" dx="2.54" dy="1.27" layer="1" rot="R90" cream="no"/>
-<smd name="2-CTS" x="-3.81" y="0" dx="2.54" dy="1.27" layer="1" rot="R90" cream="no"/>
-<smd name="3-VCC" x="-1.27" y="0" dx="2.54" dy="1.27" layer="1" rot="R90" cream="no"/>
-<smd name="4-TX" x="1.27" y="0" dx="2.54" dy="1.27" layer="1" rot="R90" cream="no"/>
-<smd name="5-RX" x="3.81" y="0" dx="2.54" dy="1.27" layer="1" rot="R90" cream="no"/>
-<smd name="6-DTR" x="6.35" y="0" dx="2.54" dy="1.27" layer="1" rot="R90" cream="no"/>
+<smd name="1-GND" x="-6.35" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90" cream="no"/>
+<smd name="2-CTS" x="-3.81" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90" cream="no"/>
+<smd name="3-VCC" x="-1.27" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90" cream="no"/>
+<smd name="4-TX" x="1.27" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90" cream="no"/>
+<smd name="5-RX" x="3.81" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90" cream="no"/>
+<smd name="6-DTR" x="6.35" y="0" dx="2.54" dy="1.27" layer="1" roundness="20" rot="R90" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -9363,7 +9538,7 @@ all kinds in 0603</description>
 </symbols>
 <devicesets>
 <deviceset name="FTDI" prefix="J">
-<description>6pol FTDI Connector</description>
+<description>FTDI 6pol connector</description>
 <gates>
 <gate name="J" symbol="FTDI" x="0" y="0"/>
 </gates>
@@ -9543,32 +9718,32 @@ all kinds in 0603</description>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="FTDI" library="we-board" deviceset="FTDI" device=""/>
 <part name="SW" library="we-switch" deviceset="SW-2UM" device="-CUS22B"/>
-<part name="R5" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="27"/>
-<part name="R6" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="27"/>
-<part name="R7" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="27"/>
-<part name="R8" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="27"/>
+<part name="R5" library="we-rcl" deviceset="RESISTOR" device="-0603" value="27"/>
+<part name="R6" library="we-rcl" deviceset="RESISTOR" device="-0603" value="27"/>
+<part name="R7" library="we-rcl" deviceset="RESISTOR" device="-0603" value="27"/>
+<part name="R8" library="we-rcl" deviceset="RESISTOR" device="-0603" value="27"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
-<part name="C3" library="we-rcl" deviceset="CAPACITOR" device="-C0603" value="100n"/>
-<part name="C4" library="we-rcl" deviceset="CAPACITOR" device="-C0603" value="100n"/>
-<part name="C5" library="we-rcl" deviceset="CAPACITOR" device="-C0805" value="4u7"/>
-<part name="R1" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="27"/>
-<part name="R2" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="27"/>
-<part name="C1" library="we-rcl" deviceset="CAPACITOR" device="-C0603" value="10n"/>
-<part name="CU" library="we-rcl" deviceset="CAPACITOR" device="-C0603" value="NC"/>
-<part name="RU" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="0"/>
+<part name="C3" library="we-rcl" deviceset="CAPACITOR" device="-0603" value="100n"/>
+<part name="C4" library="we-rcl" deviceset="CAPACITOR" device="-0603" value="100n"/>
+<part name="C5" library="we-rcl" deviceset="CAPACITOR" device="-0805" value="4u7"/>
+<part name="R1" library="we-rcl" deviceset="RESISTOR" device="-0603" value="27"/>
+<part name="R2" library="we-rcl" deviceset="RESISTOR" device="-0603" value="27"/>
+<part name="C1" library="we-rcl" deviceset="CAPACITOR" device="-0603" value="10n"/>
+<part name="CU" library="we-rcl" deviceset="CAPACITOR" device="-0603" value="NC"/>
+<part name="RU" library="we-rcl" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="RX" library="we-opto" deviceset="LED" device="-0603"/>
-<part name="R3" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="1k"/>
+<part name="R3" library="we-rcl" deviceset="RESISTOR" device="-0603" value="1k"/>
 <part name="TX" library="we-opto" deviceset="LED" device="-0603"/>
-<part name="R4" library="we-rcl" deviceset="RESISTOR" device="-R0603" value="1k"/>
-<part name="C8" library="we-rcl" deviceset="CAPACITOR" device="-C0603" value="100n"/>
-<part name="C9" library="we-rcl" deviceset="CAPACITOR" device="-C0603" value="100n"/>
-<part name="C2" library="we-rcl" deviceset="CAPACITOR" device="-C0805" value="4u7"/>
+<part name="R4" library="we-rcl" deviceset="RESISTOR" device="-0603" value="1k"/>
+<part name="C8" library="we-rcl" deviceset="CAPACITOR" device="-0603" value="100n"/>
+<part name="C9" library="we-rcl" deviceset="CAPACITOR" device="-0603" value="100n"/>
+<part name="C2" library="we-rcl" deviceset="CAPACITOR" device="-0805" value="4u7"/>
 <part name="CBUS0" library="we-rcl" deviceset="PAD" device="-1.27X1.27_NC" value="PAD-1.27X1.27_NC"/>
 <part name="CBUS3" library="we-rcl" deviceset="PAD" device="-1.27X1.27_NC" value="PAD-1.27X1.27_NC"/>
-<part name="C6" library="we-rcl" deviceset="CAPACITOR" device="-C0603" value="47p"/>
-<part name="C7" library="we-rcl" deviceset="CAPACITOR" device="-C0603" value="47p"/>
+<part name="C6" library="we-rcl" deviceset="CAPACITOR" device="-0603" value="47p"/>
+<part name="C7" library="we-rcl" deviceset="CAPACITOR" device="-0603" value="47p"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="LOGO1" library="we-symbol" deviceset="WEEE_LOGO" device="-S"/>
 <part name="LOGO4" library="we-symbol" deviceset="LOGO" device="-S_PLACE_M"/>
@@ -9586,8 +9761,8 @@ Option 2: RU=330, CU=100n</text>
 <text x="58.42" y="146.05" size="3.81" layer="94" align="bottom-center">Micro-USB</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="LOGO2" gate="G$1" x="187.96" y="7.62"/>
+<instance part="FRAME1" gate="F" x="0" y="0"/>
+<instance part="LOGO2" gate="L" x="187.96" y="7.62"/>
 <instance part="X1" gate="X" x="165.1" y="7.62"/>
 <instance part="X2" gate="X" x="170.18" y="7.62"/>
 <instance part="IC1" gate="IC" x="166.37" y="128.27"/>
@@ -9645,9 +9820,9 @@ Option 2: RU=330, CU=100n</text>
 <attribute name="NAME" x="68.58" y="125.73" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="68.58" y="123.19" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="RX" gate="L" x="171.45" y="96.52" rot="R90"/>
+<instance part="RX" gate="D" x="171.45" y="96.52" rot="R90"/>
 <instance part="R3" gate="R" x="161.29" y="96.52" rot="R180"/>
-<instance part="TX" gate="L" x="171.45" y="86.36" rot="R90"/>
+<instance part="TX" gate="D" x="171.45" y="86.36" rot="R90"/>
 <instance part="R4" gate="R" x="161.29" y="86.36" rot="R180"/>
 <instance part="C8" gate="C" x="132.08" y="114.3" rot="R90"/>
 <instance part="C9" gate="C" x="142.24" y="114.3" rot="R90"/>
@@ -9661,9 +9836,9 @@ Option 2: RU=330, CU=100n</text>
 <instance part="C6" gate="C" x="101.6" y="130.81" rot="R90"/>
 <instance part="C7" gate="C" x="111.76" y="130.81" rot="R90"/>
 <instance part="GND1" gate="1" x="106.68" y="125.73"/>
-<instance part="LOGO1" gate="G$1" x="177.8" y="7.62"/>
-<instance part="LOGO4" gate="G$1" x="208.28" y="7.62"/>
-<instance part="LOGO3" gate="G$1" x="198.12" y="7.62"/>
+<instance part="LOGO1" gate="L" x="177.8" y="7.62"/>
+<instance part="LOGO4" gate="L" x="208.28" y="7.62"/>
+<instance part="LOGO3" gate="L" x="198.12" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -9889,24 +10064,24 @@ Option 2: RU=330, CU=100n</text>
 </net>
 <net name="CBUS1" class="0">
 <segment>
-<pinref part="IC1" gate="IC" pin="CBUS1"/>
+<pinref part="IC1" gate="IC" pin="RXLED/CBUS1"/>
 <label x="189.23" y="118.11" size="1.27" layer="95" xref="yes"/>
 <wire x1="189.23" y1="118.11" x2="184.15" y2="118.11" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RX" gate="L" pin="C"/>
+<pinref part="RX" gate="D" pin="C"/>
 <wire x1="181.61" y1="96.52" x2="176.53" y2="96.52" width="0.1524" layer="91"/>
 <label x="181.61" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CBUS2" class="0">
 <segment>
-<pinref part="IC1" gate="IC" pin="CBUS2"/>
+<pinref part="IC1" gate="IC" pin="TXLED/CBUS2"/>
 <label x="189.23" y="115.57" size="1.27" layer="95" xref="yes"/>
 <wire x1="184.15" y1="115.57" x2="189.23" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TX" gate="L" pin="C"/>
+<pinref part="TX" gate="D" pin="C"/>
 <wire x1="181.61" y1="86.36" x2="176.53" y2="86.36" width="0.1524" layer="91"/>
 <label x="181.61" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -10005,14 +10180,14 @@ Option 2: RU=330, CU=100n</text>
 </net>
 <net name="RX-LED" class="0">
 <segment>
-<pinref part="RX" gate="L" pin="A"/>
+<pinref part="RX" gate="D" pin="A"/>
 <pinref part="R3" gate="R" pin="1"/>
 <wire x1="166.37" y1="96.52" x2="168.91" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX-LED" class="0">
 <segment>
-<pinref part="TX" gate="L" pin="A"/>
+<pinref part="TX" gate="D" pin="A"/>
 <pinref part="R4" gate="R" pin="1"/>
 <wire x1="166.37" y1="86.36" x2="168.91" y2="86.36" width="0.1524" layer="91"/>
 </segment>
