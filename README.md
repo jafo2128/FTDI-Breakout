@@ -14,7 +14,7 @@ The FTDI-Breakout is an USB to Serial Adapter with FTDI Chipset.
 * 3.3V or 5V logic/supply voltage selectable by switch
 * Rx + Tx Status LEDs
 * Overcurrent protection (resettable polyswitch fuse)
-* Standard 6 pin FTDI connector with GND, CTS, VCC, TX, RX, DTR (for Arduino)
+* Standard 6 pin FTDI connector with GND, CTS, VCC, TX, RX, DTR
 * USB-Connector: microUSB (v2) or miniUSB (v1)
 
 
