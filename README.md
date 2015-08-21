@@ -1,7 +1,7 @@
 # FTDI-Breakout
 The FTDI-Breakout is an USB to Serial Adapter with FTDI Chipset.
 
-[![FTDI-Breakout](https://raw.github.com/watterott/FTDI-Breakout/master/pcb/FTDI-Breakout_v20.jpg)](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2)
+[![FTDI-Breakout](https://github.com/watterott/FTDI-Breakout/raw/master/hardware/FTDI-Breakout_v20.jpg)](http://www.watterott.com/en/FTDI-Breakout-Reloaded-V2)
 
 
 ## Shop
@@ -19,5 +19,5 @@ The FTDI-Breakout is an USB to Serial Adapter with FTDI Chipset.
 
 
 ## Hardware and Software
-* [Schematics + Layout](https://github.com/watterott/FTDI-Breakout/tree/master/pcb)
+* [Schematics + Layout](https://github.com/watterott/FTDI-Breakout/tree/master/hardware)
 * [FTDI Serial Port Driver](http://www.ftdichip.com/Drivers/VCP.htm)
